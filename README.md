@@ -6,6 +6,7 @@ The currently included skills enhance your project workspace organically:
 - **Changelog Tracker**: Standardizes and manages `CHANGELOG.md` updates.
 - **Code Reviewer**: Automates detailed code reviews based on best practices.
 - **Git Commit Formatter**: Generates compliant Conventional Commit logs.
+- **JSON to Pydantic**: Converts raw JSON snippets directly into structured Python models.
 - **License Header Adder**: Appends legal licensing text to top of new files.
 - **README Updater**: Automatically handles maintaining this very documentation.
 
@@ -52,3 +53,4 @@ To invoke any of the active skills, communicate your intent to the agent within 
 - *"Commit these changes"*
 - *"Please document project changes"*
 - *"Review my code"*
+- *"{ 'product': 'Widget' } Convert this JSON to a Pydantic model"*
