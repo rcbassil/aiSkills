@@ -18,3 +18,9 @@ ENV/
 .vscode/
 .idea/
 .DS_Store
+
+# OpenCode
+.opencode/node_modules/
+.opencode/cache/
+.opencode/bin/
+.openconfig/node_modules/
