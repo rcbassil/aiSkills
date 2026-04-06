@@ -18,4 +18,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Changed
 - Updated `README.md` to formally document newly-added skills and instructions.
 - Updated `README.md` with the project title.
+- Renamed project from `customagent` to `Gemini Skills` for consistency.
 - Renamed `git-commit-formatter` directory to follow the standard skill structure.

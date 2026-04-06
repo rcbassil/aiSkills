@@ -1,6 +1,6 @@
-# Custom Agent
+# Gemini Skills
 
-Custom Agent is a Python project designed to provide and manage a suite of specialized agent skills via the `.agent/skills` framework. 
+Gemini Skills is a Python project designed to provide and manage a suite of specialized agent skills via the `.agent/skills` framework. 
 
 The currently included skills enhance your project workspace organically:
 - **Changelog Tracker**: Standardizes and manages `CHANGELOG.md` updates.
@@ -45,7 +45,7 @@ To test the main module output, you can use:
 
 ```bash
 python main.py
-# Output: Hello from customagent!
+# Output: Hello from geminiSkills!
 ```
 
 To invoke any of the active skills, communicate your intent to the agent within the workspace context. For instance:
