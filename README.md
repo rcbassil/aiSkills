@@ -1,4 +1,4 @@
-# Gemini Skills
+# AI Skills
 
 A curated collection of reusable agent skills for the `.agent/skills` framework. Each skill encapsulates a focused capability — from formatting commit messages to generating Pydantic models — that an AI coding assistant can invoke on demand inside any workspace.
 

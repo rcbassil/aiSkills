@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Rewrote `README.md` with real GitHub clone URL, skills table, project structure diagram, and clearer section organization.
 - Renamed source package directory from `src/gemini_skills/` to `src/agent/`.
 - Updated `main.py` greeting from "Hello from geminiSkills!" to "Hello from aiSkills!".
+- Renamed project from `Gemini Skills` to `AI Skills` across README, pyproject.toml, and uv.lock.
 
 ### Added
 - `json-to-pydantic` skill and examples to convert JSON snippets to structured Python Pydantic models.
