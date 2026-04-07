@@ -1,6 +1,6 @@
 # AI Skills
 
-A curated collection of reusable agent skills for the `.agent/skills` framework. These focused capabilities — from formatting commit messages to generating Pydantic models — can be invoked on demand by an AI coding assistant inside any workspace.
+A curated collection of reusable agent skills for the `.agents/skills` framework. These focused capabilities — from formatting commit messages to generating Pydantic models — can be invoked on demand by an AI coding assistant inside any workspace.
 
 ## Included Skills
 
@@ -12,6 +12,11 @@ A curated collection of reusable agent skills for the `.agent/skills` framework.
 | **json-to-pydantic** | Converts JSON data snippets into Python Pydantic data models. |
 | **license-header-adder** | Adds the standard open-source license header to new source files. |
 | **readme-updater** | Updates the project's README.md with comprehensive, up-to-date documentation. |
+| **refactor-module** | Transforms monolithic Terraform configurations into reusable, maintainable modules. |
+| **terraform-search-import** | Discovers existing cloud resources using Terraform Search queries and bulk imports them. |
+| **terraform-stacks** | Comprehensive guide for working with HashiCorp Terraform Stacks. |
+| **terraform-style-guide** | Generates Terraform HCL code following HashiCorp's official style conventions. |
+| **terraform-test** | Comprehensive guide for writing and running Terraform tests. |
 
 ## Prerequisites
 
@@ -57,6 +62,7 @@ Skills are activated by communicating your intent to the agent inside your works
 "Review my code"               → triggers code-reviewer
 "Document project changes"     → triggers changelog-tracker
 "Convert this JSON to a model" → triggers json-to-pydantic
+"Refactor Terraform code"     → triggers refactor-module
 ```
 
 ## Project Structure
