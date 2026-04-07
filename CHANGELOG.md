@@ -12,9 +12,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Updated `main.py` greeting from "Hello from geminiSkills!" to "Hello from aiSkills!".
 - Renamed project from `Gemini Skills` to `AI Skills` across README, pyproject.toml, and uv.lock.
 - Defined a clear project description in `pyproject.toml`.
+- Moved and consolidated all agent skills from `.agent/skills/` to the new `.agents/skills/` directory.
+- Updated internal symbolic links in `.opencode/skills/` to reflect the new directory structure.
 - Refined `README.md` introductory paragraph and skills table to perfectly align with skill definitions.
 
 ### Added
+- Added Terraform-focused skills bundle from `hashicorp/agent-skills` (stacks, style-guide, test, refactor-module, search-import).
 - `.opencode/` folder with symbolic links to all available skills for streamlined access.
 - `json-to-pydantic` skill and examples to convert JSON snippets to structured Python Pydantic models.
 - `readme-updater` skill to maintain updating logic for README.md.
