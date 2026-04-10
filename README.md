@@ -10,6 +10,7 @@ A curated collection of reusable agent skills for the `.agents/skills` framework
 | **code-reviewer** | Reviews code changes for quality, readability, maintainability, and conformity to best practices. |
 | **git-commit-formatter** | Formats git commit messages according to Conventional Commits specification. |
 | **json-to-pydantic** | Converts JSON data snippets into Python Pydantic data models. |
+| **kubernetes-troubleshooter** | Troubleshoots Kubernetes resources, applications, ingress/routes, gateway API, and network communication. |
 | **license-header-adder** | Adds the standard open-source license header to new source files. |
 | **readme-updater** | Updates the project's README.md with comprehensive, up-to-date documentation. |
 | **refactor-module** | Transforms monolithic Terraform configurations into reusable, maintainable modules. |
@@ -65,6 +66,7 @@ Skills are activated by communicating your intent to the agent inside your works
 "Convert this JSON to a model" → triggers json-to-pydantic
 "Refactor Terraform code"     → triggers refactor-module
 "Search for vulnerabilities"   → triggers vulnerability-scanner
+"Troubleshoot Kubernetes"      → triggers kubernetes-troubleshooter
 ```
 
 ## Project Structure

@@ -20,6 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Refined `README.md` introductory paragraph and skills table to perfectly align with skill definitions.
 
 ### Added
+- Created `kubernetes-troubleshooter` skill as a DevSecOps assistant for diagnosing issues within a Kubernetes cluster.
 - Created `vulnerability-scanner` skill to scan dependencies and source code for CVEs and security vulnerabilities in Python, JavaScript, and Terraform projects.
 - Added Terraform-focused skills bundle from `hashicorp/agent-skills` (stacks, style-guide, test, refactor-module, search-import).
 - `.opencode/` folder with symbolic links to all available skills for streamlined access.
