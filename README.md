@@ -10,7 +10,7 @@ A curated collection of reusable agent skills for the `.agents/skills` framework
 |---|---|
 | **changelog-tracker** | Manages and tracks changelogs in the project following the "Keep a Changelog" format. |
 | **code-reviewer** | Reviews code changes for quality, readability, maintainability, and conformity to best practices. |
-| **drawio-diagram** | Generates native `.drawio` architecture diagrams, flowcharts, ER diagrams, sequence diagrams, and more. |
+| **drawio** | Generates native `.drawio` architecture diagrams, flowcharts, ER diagrams, sequence diagrams, and more. |
 | **git-commit-formatter** | Formats git commit messages according to Conventional Commits specification. |
 | **json-to-pydantic** | Converts JSON data snippets into Python Pydantic data models. |
 | **kubernetes-troubleshooter** | Troubleshoots Kubernetes resources, applications, ingress/routes, gateway API, and network communication. |
@@ -70,7 +70,7 @@ Skills are activated by communicating your intent to the agent inside your works
 "Refactor Terraform code"     → triggers refactor-module
 "Search for vulnerabilities"   → triggers vulnerability-scanner
 "Troubleshoot Kubernetes"      → triggers kubernetes-troubleshooter
-"Create an architecture diagram" → triggers drawio-diagram
+"Create an architecture diagram" → triggers drawio
 ```
 
 ## Project Structure

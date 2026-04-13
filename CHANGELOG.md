@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
-- `drawio-diagram` skill to generate native `.drawio` architecture diagrams, flowcharts, ER diagrams, sequence diagrams, and more — with optional export to PNG, SVG, and PDF.
+- `drawio` skill to generate native `.drawio` architecture diagrams, flowcharts, ER diagrams, sequence diagrams, and more — with optional export to PNG, SVG, and PDF.
 - `aiSkills-architecture.drawio` — architecture overview diagram of the project.
 
 ### Changed
