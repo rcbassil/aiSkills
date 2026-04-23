@@ -21,18 +21,13 @@ Audio is processed in overlapping chunks so long files stay memory-efficient and
 
 ## Instructions
 
-### Step 1 — Verify dependencies
+### Step 1 — Verify ffmpeg
 
-Check that `faster-whisper` and `pydub` are installed. If either is missing, install them.
-
-```bash
-python -c "import faster_whisper, pydub" 2>/dev/null || \
-  pip install faster-whisper pydub
-```
-
-`pydub` requires `ffmpeg` for non-WAV formats. Install if missing:
+`pydub` requires `ffmpeg` for non-WAV formats. Check and install if missing:
 
 ```bash
+ffmpeg -version 2>/dev/null || echo "ffmpeg not found"
+
 # macOS
 brew install ffmpeg
 
@@ -48,10 +43,14 @@ winget install ffmpeg
 The skill ships a ready-to-run script at `scripts/transcribe.py` (relative to this skill's directory).
 Find its absolute path and use it in subsequent steps.
 
+The script uses [PEP 723 inline metadata](https://peps.python.org/pep-0723/) — `uv run` reads the
+`# /// script` block and installs `faster-whisper` and `pydub` automatically into an isolated
+environment on first run. No manual `pip install` needed.
+
 ### Step 3 — Run transcription
 
 ```bash
-python <skill_dir>/scripts/transcribe.py <audio_file> [options]
+uv run <skill_dir>/scripts/transcribe.py <audio_file> [options]
 ```
 
 **Key options:**
@@ -69,16 +68,16 @@ python <skill_dir>/scripts/transcribe.py <audio_file> [options]
 
 ```bash
 # Quick transcription — auto language, base model
-python transcribe.py interview.mp3
+uv run transcribe.py interview.mp3
 
 # Specify language and higher-quality model
-python transcribe.py lecture.m4a -m small -l en
+uv run transcribe.py lecture.m4a -m small -l en
 
 # Long file with custom output path
-python transcribe.py podcast.mp3 -o podcast.srt -m medium -l en
+uv run transcribe.py podcast.mp3 -o podcast.srt -m medium -l en
 
 # GPU acceleration
-python transcribe.py video.mp4 --device cuda -m large-v3
+uv run transcribe.py video.mp4 --device cuda -m large-v3
 ```
 
 ### Step 4 — Report the result

@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "faster-whisper",
+#   "pydub",
+# ]
+# ///
 """Transcribe audio files to SRT format using faster-whisper with chunked processing."""
 
 import argparse
